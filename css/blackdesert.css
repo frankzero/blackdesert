@@ -1,0 +1,60 @@
+body{
+    background-color:#000;
+    color:#fff;
+}
+
+#main{
+    max-width:872px;
+    overflow:hidden;
+    padding:20px;
+    margin:0 auto;
+}
+
+
+.grid{
+    
+}
+
+.grid tr:hover{
+    background-color:green;
+}
+.grid tr:hover input{
+    background-color:green;
+}
+
+.grid td input{
+    padding:3px;
+    width:122px;
+    text-align:right;
+    color:#fff;
+    background-color:#000;
+    border:0;
+}
+
+
+.grid .amount input{
+    width:40px;
+}
+
+
+
+.listitem{
+    
+    float:left;
+}
+
+.listitem .item1{
+    
+    padding:5px;
+    width:120px;
+    float:left;
+}
+.listitem .item2{
+    
+    width:40px;
+    color:red;
+    float:left;
+    height:29px;
+    line-height: 29px;
+    text-align: center;
+}

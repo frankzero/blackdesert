@@ -3,17 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <title></title>
+<meta name="viewport" content="width=360, user-scalable=0" />
+<link rel="stylesheet" href="css/blackdesert.css">
 
-<style>
-body{
-    background-color:#000;
-    color:#fff;
-}
-
-#main{
-
-}
-</style>
 
 </head>
 <body>
@@ -28,23 +20,23 @@ body{
     </div>
 
 
-    <div id="list">
-        
-    </div>
-
 </div>
 
 
 <script src="ff.js"></script>
-<script src="gg.js?v=1"></script>
+<script src="js/grid.js?v=1"></script>
+<script src="js/row.js?v=1"></script>
+<script src="js/data.js?v=1"></script>
 
 
 <script>
 
 let grid = new __grid('content');
+grid.autoload();
+
 
 ff('#button1').click(function(e){
-    grid.add();
+    grid.addRow();
 });
 
 
