@@ -1,12 +1,57 @@
-<?php 
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<meta name="viewport" content="width=360, user-scalable=0" />
+<link rel="stylesheet" href="css/blackdesert.css">
 
 
-handle_index();
+</head>
+<body>
+
+<div id="main">
+    <input id="button1" type="button" value="add">    
+    <input id="button2" type="button" value="save">
+    <!--input id="button3" type="button" value="clear"-->
+    
+    <div id="content">
+        
+    </div>
+
+
+</div>
+
+
+<script src="ff.js"></script>
+<script src="js/grid.js?v=1"></script>
+<script src="js/row.js?v=1"></script>
+<script src="js/data.js?v=1"></script>
+
+
+<script>
+
+let grid = new __grid('content');
+grid.autoload();
+
+
+ff('#button1').click(function(e){
+    grid.addRow();
+});
 
 
 
-function handle_index(){
 
-    require __DIR__.'/tpl.html';
+ff('#button2').click(function(e){
+    grid.save();
+});
 
-}
+
+
+ff('#button3').click(function(e){
+    grid.clear();
+});
+
+</script>
+</body>
+</html>
