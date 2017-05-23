@@ -69,7 +69,10 @@ __grid.prototype.getData=function(){
 
 __grid.prototype.autoload = function(){
 
-
+    if(window.localStorage['data']){
+        data = window.localStorage['data'];
+        data = JSON.parse(data);
+    }
     grid.loadData(data);
 
 
@@ -81,9 +84,9 @@ __grid.prototype.save = function(){
 
     let data = this.getData();
 
-    //console.log('save', data);
+    console.log('save', data);
 
-    //window.localStorage['data'] = JSON.stringify(data, null, 2);
+    window.localStorage['data'] = JSON.stringify(data, null, 2);
 
     console.log(JSON.stringify(data, null, 2));
 
